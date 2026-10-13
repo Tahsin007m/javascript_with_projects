@@ -1,0 +1,20 @@
+/* Page-wide styles: sets the font and centers all content */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Styles for the "Roll" button */
+#btn{
+    font-size: 3em;                           /* Large text so the button is easy to see and click */
+    color: rgb(255, 255, 255);                /* White text */
+    background-color: rgb(7, 68, 112);      /* Green background */
+    padding: 10px;                            /* Space between the text and the button's edge */
+    border-radius: 15px;                      /* Rounded corners */
+    margin: 0px;                              /* No extra space outside the button */
+}
+
+/* Styles shared by all three result labels */
+.mylabel{
+    font-size: 3em;                           /* Large text so the dice numbers are easy to read */
+}
