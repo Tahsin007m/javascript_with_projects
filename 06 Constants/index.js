@@ -17,9 +17,9 @@ let circumference;
 // only boolean and numbers are declarable as consts, this will not work for strings
 
 
-document.getElementById("btn").onclick = function(){
+document.getElementById("btn").onclick = function(){ // Runs when the button is clicked
       radius = document.getElementById("inp").value;
-      radius = Number(radius);
+      radius = Number(radius); // Converts the input value to a number
       circumference = 2 * PI * radius;
-      document.getElementById("outp").textContent = circumference;
+      document.getElementById("outp").textContent = circumference; // Displays the result
 }
