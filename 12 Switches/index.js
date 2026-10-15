@@ -1,11 +1,11 @@
-// SWITCH = can be an efficient replacement to many else if statements
+// SWITCH = an efficient replacement for multiple else if statements
 
 let day = 1;
 
 switch(day){
     case 1:
         console.log(`It is Monday`);
-        break;
+        break; // Stops execution
     case 2:
         console.log(`It is Tuesday`);
         break;
@@ -25,6 +25,5 @@ switch(day){
         console.log(`It is Sunday`);
         break;
     default:
-        console.log(`${day} is not  day!`);    
-                               
+        console.log(`${day} is not a valid day!`); // Runs if no case matches
 }
