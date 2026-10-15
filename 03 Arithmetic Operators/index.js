@@ -65,6 +65,7 @@ console.log("Final value of students:", students);
    operator precedence
    1. parenthesis()
    2. exponents
-   3. multiplication and division and modulo
-   4. addition and substraction
+   3. multiplication and division and modulo ( * / % )
+   4. addition and substraction ( + - )
+   Normally code is executed from left to right side
  */
