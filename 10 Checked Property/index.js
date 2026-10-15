@@ -17,7 +17,7 @@ mysubmit.onclick = function(){
     else{
         subresult.textContent = `You are not subscribed`;
     }
-
+// below are the radio button codes
     if(visabtn.checked){
         paymenresult.textContent = `You are paying with Visa`;
     }
