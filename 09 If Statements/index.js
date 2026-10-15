@@ -21,7 +21,7 @@ btn.onclick = function(){
         result.textContent = `You can't enter. You were just born.`;
     }
     else if(age >= 18){
-        result.textContent = `YYou can enter this site!`; // typo: "YYou"
+        result.textContent = `You can enter this site!`; 
     }
     else if(age < 0){
         result.textContent = `Your age can't be negative!`;
