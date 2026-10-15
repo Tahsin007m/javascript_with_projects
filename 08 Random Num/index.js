@@ -14,13 +14,12 @@ const mylabel3 = document.getElementById("label3");   // Displays the third dice
 const min = 1;   // Lowest possible roll
 const max = 6;   // Highest possible roll
 
-// Variables to store the three random numbers
 let randomNum1;
 let randomNum2;
 let randomNum3;
 
-// This function runs every time the "Roll" button is clicked
 mybutton.onclick = function(){
+    
     // Math.random() gives a decimal from 0 up to (but not including) 1.
     // Multiplying by max gives a decimal from 0 up to 6.
     // Math.floor() rounds down to a whole number (0 to 5).
@@ -28,7 +27,7 @@ mybutton.onclick = function(){
     randomNum1 = Math.floor(Math.random() * max) + min;
     randomNum2 = Math.floor(Math.random() * max) + min;
     randomNum3 = Math.floor(Math.random() * max) + min;
-
+    
     // Display each random number on the page inside its label
     mylabel1.textContent = randomNum1;
     mylabel2.textContent = randomNum2;
