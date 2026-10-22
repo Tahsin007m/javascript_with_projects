@@ -4,16 +4,12 @@ body{
 
 form{
     border-radius: 20px;
-    border: 1px solid rgb(40, 209, 180);
+    border: 1px solid transparent;
     margin: auto;
     width: 30%;
     padding-bottom: 5px;
     padding-top: 5px;
-    background-color: rgba(120, 177, 160, 0.824);
-}
-
-
-form{
+    background-color: rgba(193, 225, 225, 0.824);
     text-align: center;
 }
 
@@ -30,6 +26,7 @@ h1{
     font-family: "Segoe UI", Arial, sans-serif;
     outline: none;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 button{
@@ -38,4 +35,15 @@ button{
     border-radius: 15px;
     border: 0px solid #fff;
     cursor: pointer;
+}
+button:hover{
+    background-color: rgb(66, 66, 65);
+    color: #fff;
+}
+button:hover{
+    transition: 0.5s;
+}
+label{
+    font-style: italic;
+    font-weight: bold;
 }
