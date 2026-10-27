@@ -27,3 +27,10 @@ input{
     width: 150px;
     font-weight: bold;
 }
+#diceresult{
+    margin: 15px;
+}
+#diceimages img{
+    width: 100px;  
+    margin: 10px;
+}
