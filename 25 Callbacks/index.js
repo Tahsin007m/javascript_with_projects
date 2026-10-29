@@ -1,42 +1,67 @@
-// callback =   A callback is a function you pass as an argument to another function, 
-//              so that the other function can call it later, either right away or after 
-//              something finishes (like a timer, a file read, or a network request).
+/*
+    CALLBACK = A function passed as an argument to another function,
+    so that the other function can call it.
 
-//            used to handle asynchronous operation:
-//            1. Reading a file
-//            2. Network requests
-//            3. Interacting with databases
+    Callbacks are commonly used for:
+    1. Timers
+    2. Reading files
+    3. Network requests
+    4. Database operations
+*/
 
-//            "Hey, when your're done, call this next."
+// Example 1: Basic Callback
 
 Hello(wait);
 
-function Hello(callback){
-    console.log(`Hello`);
+function Hello(callback) {
+    console.log("Hello");
     callback();
 }
 
-function wait(){
+function wait() {
     console.log("Please wait");
 }
 
-function leave(){
+function leave() {
     console.log("Leave");
 }
 
-function GoodBye(){
-    console.log(`Good Bye`);
+function GoodBye() {
+    console.log("Good Bye");
 }
 
-sum(displayconsole, 1, 2);
 
-function sum(callbacks, x, y)
-{
+// Example 2: Callback with Parameters
+
+sum(displayConsole, 1, 2);
+
+function sum(callback, x, y) {
     let result = x + y;
-    callbacks(result);
+    callback(result);
 }
 
-function displayconsole(resutlt)
-{
+function displayConsole(result) {
     console.log(result);
 }
+
+
+// Example 3: Using a Different Callback
+
+sum(displayMessage, 5, 10);
+
+function displayMessage(result) {
+    console.log(`The sum is: ${result}`);
+}
+
+
+// Example 4: Asynchronous Callback using setTimeout()
+
+function finish() {
+    console.log("Task completed!");
+}
+
+console.log("Task started...");
+
+setTimeout(finish, 2000);
+
+console.log("Task is running...");
