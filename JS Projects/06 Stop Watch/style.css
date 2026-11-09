@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#H1{
+    font-size: 4rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+#display{
+    font-size: 4rem;
+    font-family: monospace;
+    margin-bottom: 25px;
+}
+
+#controls button{
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin: 5px;
+    min-width: 125px;
+    cursor: pointer;
+}
+
