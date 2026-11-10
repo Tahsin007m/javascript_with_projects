@@ -3,12 +3,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: hsl(0, 0%, 95%);
 }
 
 #H1{
     font-size: 4rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:monospace;
 }
 
 #container{
@@ -17,7 +17,8 @@ body{
     align-items: center;
     border: 1px solid black;
     border-radius: 50px;
-    padding: 30px;
+    padding: 40px;
+    background-color: white;
 }
 
 #display{
@@ -29,10 +30,42 @@ body{
 #controls button{
     border-radius: 20px;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 1.5rem;
     margin: 5px;
     min-width: 125px;
     cursor: pointer;
 }
+
+#start-btn{
+    background-color: hsl(120, 82%, 35%);
+    color: white;
+    font-size: 3rem;
+}
+#stop-btn{
+    background-color: hsl(0, 82%, 35%);
+    color: white;
+    font-size: 3rem;
+}
+
+#reset-btn{
+    background-color: hsl(213, 82%, 35%);
+    color: white;
+    font-size: 3rem;
+}
+#start-btn:hover{
+    background-color: hsl(120, 82%, 25%);
+    transition-duration: 0.5s;
+}
+#stop-btn:hover{
+    background-color: hsl(0, 82%, 25%);
+    transition-duration: 0.5s;
+}
+
+#reset-btn:hover{
+    background-color: hsl(213, 82%, 25%);
+    transition-duration: 0.5s;
+}
+
+
 
