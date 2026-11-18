@@ -1,11 +1,21 @@
-// ES6 Module = An external file that contaibs resuable code
-//              that can be imported into other javascript apps....
-//              Write ccontaian variables, classes, functions ... and more
-//              Introduced as part of ECMAScript 2015 update
+// Importing specific variables and functions from another module
+import {
+    PI,
+    getCircumference,
+    getArea,
+    getVolume
+} from './mathUtil.js';
 
-import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
+const radius = 10;
 
-console.log(PI);
-console.log(`The circumference is ${getCircumference(10)} cm`);
-console.log(`The area is ${getArea(10)} cm^2`);
-console.log(`The volume is ${getVolume(10)} cm^3`);
+// Display the value of PI
+console.log(`Value of PI: ${PI}`);
+
+// Calculate and display circumference
+console.log(`Circumference: ${getCircumference(radius)} cm`);
+
+// Calculate and display area
+console.log(`Area: ${getArea(radius)} cm²`);
+
+// Calculate and display volume
+console.log(`Volume: ${getVolume(radius)} cm³`);
