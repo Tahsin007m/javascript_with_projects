@@ -9,45 +9,38 @@
     4. Database operations
 */
 
-// Example 1: Basic Callback
+//===== Example 1: BASIC CALLBACK =====
 
-Hello(wait);
-
-function Hello(callback) {
-    console.log("Hello");
-    callback();
+function greet(name, callback) {
+  console.log(`Hello, ${name}!`);
+  callback(); // calling the function that was passed in
 }
 
-function wait() {
-    console.log("Please wait");
+function sayBye() { // this is the callback function that will be passed
+  console.log("Goodbye!"); // in greet function
 }
 
-function leave() {
-    console.log("Leave");
-}
-
-function GoodBye() {
-    console.log("Good Bye");
-}
+greet("Tahsin", sayBye); // Tahsin passed in name, sayBye passed as callback
 
 
-// Example 2: Callback with Parameters
+//===== Example 2: CALLBACK WITH PARAMETERS =====
 
-sum(displayConsole, 1, 2);
+sum(displayConsole, 1, 2); // Calls sum() and passes displayConsole as a callback
 
+// Adds two numbers and passes the result to the callback function
 function sum(callback, x, y) {
     let result = x + y;
     callback(result);
 }
 
-function displayConsole(result) {
+function displayConsole(result) { // callback 
     console.log(result);
 }
 
 
-// Example 3: Using a Different Callback
+//===== Example 3: Using a Different Callback =====
 
-sum(displayMessage, 5, 10);
+sum(displayMessage, 5, 10); // passing displayMessage as callback to the same sum function
 
 function displayMessage(result) {
     console.log(`The sum is: ${result}`);
@@ -62,6 +55,7 @@ function finish() {
 
 console.log("Task started...");
 
+// finish is the callback function, executed after a 2-second delay
 setTimeout(finish, 2000);
 
 console.log("Task is running...");
