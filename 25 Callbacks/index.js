@@ -59,3 +59,25 @@ console.log("Task started...");
 setTimeout(finish, 2000);
 
 console.log("Task is running...");
+
+
+// Small Excercise
+
+function processUser(name, callback) // takes a name and a callback
+{
+    const message = `Welcome, ${name}!`; // prints the message
+    callback(message); // message is passed through an callback function for some modifications
+}
+
+function shout(message)
+{
+    console.log(message.toUpperCase()); // updates to upper case
+}
+
+function whisper(message)
+{
+     console.log(message.toLowerCase()); // updates to lower case
+}
+
+processUser("Tahsin", shout);   // WELCOME, TAHSIN!
+processUser("Tahsin", whisper); // welcome, tahsin!
